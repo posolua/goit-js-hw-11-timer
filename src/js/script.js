@@ -11,11 +11,9 @@ class CountdownTimer {
   }
 
   getDeltaTime() {
-    setInterval(() => {
-      const currentDate = Date.now();
-      const deltaTime = this.targetDate - currentDate;
-      this.updateClockface(deltaTime);
-    }, 1000);
+    const currentDate = Date.now();
+    const deltaTime = this.targetDate - currentDate;
+    this.updateClockface(deltaTime);
   }
 
   updateClockface(time) {
